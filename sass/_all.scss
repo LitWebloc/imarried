@@ -1,0 +1,117 @@
+body, ul, li, menu{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	padding: 0 40px;
+}
+
+a {
+	font-size: $f-a;
+	text-decoration: none;
+	color: black;
+}
+nav{
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: $nav-h;
+	}
+	menu, ul{
+		display: inline-block;
+		&.sign-in li{
+			&:first-child{
+				border-right: 1px solid black;
+				padding-right: 6px;
+			}
+			&:last-child{
+				padding-left: 6px;
+			}
+		}
+		&.log-in{
+			display: flex;
+			align-items: center;
+			menu{
+				margin-top: 70px;
+				width: 256px;
+				position: absolute;
+				right: 0;
+				z-index: 99;
+				border: 1px solid $grey-2;
+				border-bottom-left-radius: 5px;
+				font-size: 12px;
+				li{
+					text-transform: none;
+					font-weight: normal;
+					float: none;
+				}
+			}
+			li{
+				padding-left: 8px;
+				padding-right: 0;
+			}
+		}
+	}
+	li{
+		font-weight: 500;
+		text-transform: uppercase;
+		list-style-type: none;
+		float: left;
+		padding: 0 13px;
+		&:first-child{
+			padding: 0;
+		}
+		&:last-child{
+			padding: 0;
+		}
+	}
+	.logo{
+		display: inline-block;
+		a{
+			font-size: $f6;
+			font-weight: bold;
+		}
+	}
+	img{
+		height: 34px;
+		width: 34px;
+		border-radius: 5px;
+	}
+	i{
+		font-size: 24px;
+	}
+}
+
+button{
+	font-size: $f-a;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	padding: 9px 42px;
+	outline:none;
+	&.ping{
+		background: linear-gradient(90deg, $ping 0%, $ping-3 100%), $ping;
+		&:hover{
+			background: linear-gradient(90deg, $ping-3 0%, $ping 100%), $ping-3;
+		}
+		&.border {
+			border-radius: 5px;
+			padding: 9px 14px;
+		&.small{
+				padding: 5px 23px;
+			}
+		}
+	}
+	&.green{
+		background: linear-gradient(90deg, $green-1 0%, $green-2 100%), $green-1;
+		border-radius: 5px;
+		&:hover{
+			background: linear-gradient(90deg, $green-2 0%, $green-1 100%), $green-2;
+		}
+	}
+}
+

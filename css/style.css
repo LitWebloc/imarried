@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&subset=cyrillic");
+body { font-family: 'Roboto', sans-serif; }
+
+body, ul, li, menu { padding: 0; margin: 0; }
+
+.container { padding: 0 40px; }
+
+a { font-size: 14px; text-decoration: none; color: black; }
+
+nav .container { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+nav menu, nav ul { display: inline-block; }
+nav menu.sign-in li:first-child, nav ul.sign-in li:first-child { border-right: 1px solid black; padding-right: 6px; }
+nav menu.sign-in li:last-child, nav ul.sign-in li:last-child { padding-left: 6px; }
+nav menu.log-in, nav ul.log-in { display: flex; align-items: center; }
+nav menu.log-in menu, nav ul.log-in menu { margin-top: 70px; width: 256px; position: absolute; right: 0; z-index: 99; border: 1px solid #E0E0E0; border-bottom-left-radius: 5px; font-size: 12px; }
+nav menu.log-in menu li, nav ul.log-in menu li { text-transform: none; font-weight: normal; float: none; }
+nav menu.log-in li, nav ul.log-in li { padding-left: 8px; padding-right: 0; }
+nav li { font-weight: 500; text-transform: uppercase; list-style-type: none; float: left; padding: 0 13px; }
+nav li:first-child { padding: 0; }
+nav li:last-child { padding: 0; }
+nav .logo { display: inline-block; }
+nav .logo a { font-size: 24px; font-weight: bold; }
+nav img { height: 34px; width: 34px; border-radius: 5px; }
+nav i { font-size: 24px; }
+
+button { font-size: 14px; text-transform: uppercase; font-weight: 500; border: 0; color: white; cursor: pointer; padding: 9px 42px; outline: none; }
+button.ping { background: linear-gradient(90deg, #E62174 0%, #CE1B66 100%), #E62174; }
+button.ping:hover { background: linear-gradient(90deg, #CE1B66 0%, #E62174 100%), #CE1B66; }
+button.ping.border { border-radius: 5px; padding: 9px 14px; }
+button.ping.border.small { padding: 5px 23px; }
+button.green { background: linear-gradient(90deg, #27AE60 0%, #219653 100%), #27AE60; border-radius: 5px; }
+button.green:hover { background: linear-gradient(90deg, #219653 0%, #27AE60 100%), #219653; }
