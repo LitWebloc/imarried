@@ -1,19 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&subset=cyrillic");
 body { font-family: 'Roboto', sans-serif; }
 
-body, ul, li, menu { padding: 0; margin: 0; }
+body, ul, li, menu, input, button, h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0; }
 
-.container { padding: 0 40px; }
+p { font-size: 14px; }
 
-a { font-size: 14px; text-decoration: none; color: black; }
+h2 { font-size: 24px; text-transform: uppercase; font-weight: 600; }
 
+input { font-size: 14px; font-weight: 500; padding: 7px 5px; outline: none; }
+
+.container { margin: 0 40px; }
+
+a { font-size: 14px; display: inline-block; width: 100%; text-decoration: none; color: black; }
+
+nav li:hover a { color: #4F4F4F; }
 nav .container { display: flex; justify-content: space-between; align-items: center; height: 60px; }
 nav menu, nav ul { display: inline-block; }
+nav menu a, nav ul a { transition: all 1s; }
 nav menu.sign-in li:first-child, nav ul.sign-in li:first-child { border-right: 1px solid black; padding-right: 6px; }
 nav menu.sign-in li:last-child, nav ul.sign-in li:last-child { padding-left: 6px; }
 nav menu.log-in, nav ul.log-in { display: flex; align-items: center; }
-nav menu.log-in menu, nav ul.log-in menu { margin-top: 70px; width: 256px; position: absolute; right: 0; z-index: 99; border: 1px solid #E0E0E0; border-bottom-left-radius: 5px; font-size: 12px; }
-nav menu.log-in menu li, nav ul.log-in menu li { text-transform: none; font-weight: normal; float: none; }
+nav menu.log-in menu, nav ul.log-in menu { width: 256px; position: absolute; top: 60px; right: 0; z-index: 99; border: 1px solid #E0E0E0; border-right: 0; background: white; border-bottom-left-radius: 5px; font-size: 12px; cursor: pointer; }
+nav menu.log-in menu li, nav ul.log-in menu li { text-transform: none; font-weight: normal; float: none; padding: 3px 8px; transition: all .2s; }
+nav menu.log-in menu li:hover, nav ul.log-in menu li:hover { background: #F2F2F2; }
+nav menu.log-in menu li:hover.ping a, nav ul.log-in menu li:hover.ping a { color: #CE1B66; }
+nav menu.log-in menu li.ping a, nav ul.log-in menu li.ping a { color: #E62174; }
 nav menu.log-in li, nav ul.log-in li { padding-left: 8px; padding-right: 0; }
 nav li { font-weight: 500; text-transform: uppercase; list-style-type: none; float: left; padding: 0 13px; }
 nav li:first-child { padding: 0; }
@@ -21,7 +32,7 @@ nav li:last-child { padding: 0; }
 nav .logo { display: inline-block; }
 nav .logo a { font-size: 24px; font-weight: bold; }
 nav img { height: 34px; width: 34px; border-radius: 5px; }
-nav i { font-size: 24px; }
+nav i { font-size: 24px; display: inline-block; vertical-align: middle; margin-right: 10px; }
 
 button { font-size: 14px; text-transform: uppercase; font-weight: 500; border: 0; color: white; cursor: pointer; padding: 9px 42px; outline: none; }
 button.ping { background: linear-gradient(90deg, #E62174 0%, #CE1B66 100%), #E62174; }
@@ -30,3 +41,16 @@ button.ping.border { border-radius: 5px; padding: 9px 14px; }
 button.ping.border.small { padding: 5px 23px; }
 button.green { background: linear-gradient(90deg, #27AE60 0%, #219653 100%), #27AE60; border-radius: 5px; }
 button.green:hover { background: linear-gradient(90deg, #219653 0%, #27AE60 100%), #219653; }
+
+.col-head { display: flex; }
+
+.col-header { width: 50%; color: white; float: left; }
+.col-header h2 { padding-top: 60px; padding-bottom: 20px; }
+.col-header p { padding-top: 28px; padding-bottom: 20px; }
+.col-header input, .col-header button { margin: 20px 10px 2px 20px; }
+
+.lovers { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/para.jpg), linear-gradient(180deg, #F0809B 0%, #6D001A 100%) no-repeat center; background-size: cover; width: 100%; height: 100%; }
+.lovers:first-child input, .lovers:first-child button { margin-left: 0; }
+
+.invitation { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/photo.jpg), #D75675; background-size: cover; width: 100%; height: 100%; }
+.invitation:first-child button { margin-left: 0; }
