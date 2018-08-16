@@ -5,10 +5,11 @@
 	<title style="background: black">iMARRIED | Главная</title>
 	<link rel="stylesheet" href="css/icon/flaticon-icon.css">
 	<link rel="stylesheet" href="css/message/flaticon.css">
-	<link rel="stylesheet" href="css/arrow/flaticon.css">
+<!--	<link rel="stylesheet" href="css/arrow/flaticon.css">-->
+	<link rel="stylesheet" href="css/arrow2/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-		<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
 <header>
@@ -100,19 +101,181 @@
 </div>
 </div>
 </header>
-<div class="class1">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, id.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, id.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, id.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, id.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, id.</p>
+<div class="slider">
+	<div class="container">
+		<h2>Свадебные фотографы</h2>
+		<div class="slider-run">
+			<div class="user">
+			<div class="images">
+				<img src="img/para.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/001.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+			<div class="user">
+			<div class="images">
+				<img src="img/people/user1.jpg" alt="">
+			</div>
+			<div class="username">
+				<h5>алексей вильма</h5>
+				<small>Минск</small>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-run container">
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
 $(document).ready(function(){
-  $('.class1').slick({
-	dots:true
+  $('.slider-run').slick({
+  slidesToShow: 9,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1670,
+      settings: {
+        slidesToShow: 7,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1320,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 1120,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 970,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
 });
 </script>

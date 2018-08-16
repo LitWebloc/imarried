@@ -3,3 +3,19 @@
 body{
 	font-family: 'Roboto', sans-serif;
 }
+
+p{
+	font-size: $f4;
+}
+
+h2{
+	font-size: $f6;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+h5{
+	font-size: $f4;
+	text-transform:capitalize;
+	font-weight: 500;
+}

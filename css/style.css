@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&subset=cyrillic");
 body { font-family: 'Roboto', sans-serif; }
 
-body, ul, li, menu, input, button, h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0; }
-
 p { font-size: 14px; }
 
 h2 { font-size: 24px; text-transform: uppercase; font-weight: 600; }
 
+h5 { font-size: 14px; text-transform: capitalize; font-weight: 500; }
+
+body, ul, li, menu, input, button, h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0; }
+
 input { font-size: 14px; font-weight: 500; padding: 7px 5px; outline: none; }
 
-.container { margin: 0 40px; }
+.container { padding: 0 40px; }
 
 a { font-size: 14px; display: inline-block; width: 100%; text-decoration: none; color: black; }
 
@@ -52,3 +54,11 @@ button.green:hover { background: linear-gradient(90deg, #219653 0%, #27AE60 100%
 .lovers { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/para.jpg), linear-gradient(180deg, #F0809B 0%, #6D001A 100%) no-repeat center; background-size: cover; width: 100%; height: 100%; }
 
 .invitation { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/photo.jpg), #D75675; background-size: cover; width: 100%; height: 100%; }
+
+.slider { padding: 35px 0 70px; background: linear-gradient(0deg, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url(../img/002.jpg) no-repeat center; background-size: cover; }
+
+.slider-run { margin-top: 35px; }
+.slider-run .user .images { height: 244px; width: 173px; overflow: hidden; border-radius: 10px; text-align: right; }
+.slider-run .user .images img { height: 100%; width: auto; position: relative; left: -20%; }
+.slider-run .user .username { position: absolute; bottom: 0; width: 163px; background: rgba(255, 255, 255, 0.8); border-radius: 0 0 10px 10px; padding: 5px; }
+.slider-run .user .username h5 { line-height: .8; }
