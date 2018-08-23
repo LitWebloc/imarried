@@ -14,6 +14,15 @@ input{
 //	justify-content: center;
 //	width: 1260px;
 //}
+
+	.images{
+		overflow: hidden;
+		img{
+			width: auto;
+			height: 100%;
+		}
+	}
+
 .container{
 	padding: 0 40px;
 }
@@ -37,9 +46,6 @@ nav{
 	}
 	menu, ul{
 		display: inline-block;
-		a{
-			transition: all 1s;
-		}
 		&.sign-in li{
 			&:first-child{
 				border-right: 1px solid black;
@@ -94,10 +100,10 @@ nav{
 		float: left;
 		padding: 0 13px;
 		&:first-child{
-			padding: 0;
+			padding-left: 0;
 		}
 		&:last-child{
-			padding: 0;
+			padding-right: 0;
 		}
 	}
 	.logo{
@@ -192,12 +198,9 @@ button{
 		.images{
 			height: 244px;
 			width: 173px;
-			overflow: hidden;
 			border-radius: 10px;
 			text-align: right;
 			img{
-				height: 100%;
-				width: auto;
 				position: relative;
 				left: -20%;
 			}
@@ -214,4 +217,47 @@ button{
 			}
 		}
 	}
+}
+
+.top-work{
+	.container{
+		display: flex;
+		justify-content:space-around;
+		.work{
+			padding: 35px 0 35px 0;
+			margin: 3px;
+			iframe{
+				min-width: 45vw;
+				height: 100%;
+			}
+			.images{
+				margin-top: 15px;
+				height: 25vw;
+				max-width: 45vw;
+			}
+			.footer-work{
+				padding-top: 6px;
+				width: 100%;
+				a{
+					width: 30%;
+					.images{
+						margin-top: 0;
+						margin-right: 6px;
+						height: 28px;
+						width: 28px;
+						float: left;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.comment-work{
+	color: #4F4F4F;
+	font-size: $f2;
+	text-align: right;
+	display: inline;
+	float: right;
 }

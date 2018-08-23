@@ -15,7 +15,11 @@ h2{
 }
 
 h5{
-	font-size: $f4;
+	font-size: $f3;
 	text-transform:capitalize;
 	font-weight: 500;
+	margin-bottom: -3px !important;
+}
+small{
+	font-size: $f2;
 }
