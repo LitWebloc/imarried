@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&subset=cyrillic');
 
-body{
+body, textarea{
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -14,12 +14,17 @@ h2{
 	font-weight: 600;
 }
 
+h4{
+	font-size: $f5;
+	font-weight: 400;
+}
+
 h5{
 	font-size: $f3;
 	text-transform:capitalize;
 	font-weight: 500;
 	margin-bottom: -3px !important;
 }
-small{
+small, textarea{
 	font-size: $f2;
 }
