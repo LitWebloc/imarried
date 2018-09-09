@@ -59,11 +59,11 @@
 							<i class="flaticon-envelope-13"></i>
 						</a>
 					</li>
-					<li>
+					<li id="user">
 						<a href="#"><img src="img/people/user1.jpg" alt=""></a>
 					</li>
 <!--Открытое меню-->
-					<menu>
+					<menu style="display: none;">
 
 						<li><a href=""><i class="flaticon-user"></i>Мой профиль</a></li>
 						<li><a href=""><i class="flaticon-pen-edit"></i>Редактировать мой профиль</a></li>
@@ -73,6 +73,7 @@
 						<li><a href=""><i class="flaticon-chat-37"></i>Выйти</a></li>
 
 				</menu>
+				<div class="overlay" style="display: none;"></div>
 				</ul>
 		</div>
 	</div>
@@ -560,14 +561,18 @@
 	</div>
 </footer>
 <div class="lightbox">
-	<div class="overlay"></div>
-		<figure>
+	<div class="overlay" style="display: none;"></div>
+		<figure style="display: none;">
 			<div class="images">
 				<img src="img/001.jpg" alt="">
 			</div>
+<!--				<iframe src="https://www.youtube.com/embed/cIyVNoY3_L4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+
 			<div class="container">
 				<div class="lightbox-title">
-					<h4>Оля & Броник</h4>
+					<div class="name">
+						<h4>Оля & Броник</h4>
+					</div>
 					<div class="info-content">
 						<small class="date">Опубликовано 2 июня 2017 г. в 1:21, <a href="#">Ливин Греем</a></small>
 						<span class="likes">134<i class="flaticon-like-1"></i></span>
@@ -577,8 +582,8 @@
 				<div class="lightbox-body">
 					<h4>Комментарии</h4>
 					<div class="comments">
-						<li>
-							<ul>
+						<ul>
+							<li>
 								<a href="">
 								<span class="user">
 									<div class="images">
@@ -598,8 +603,31 @@
 										<span class="likes">134<i class="flaticon-like-1"></i></span>
 									</div>
 								</div>
-							</ul>
-						</li>
+							</li>
+							<ul>
+							<li>
+								<a href="">
+								<span class="user">
+									<div class="images">
+									<img src="img/people/user1.jpg" alt="">
+								</div>
+								<span class="user-name">
+									<h4>Павел Дуров</h4>
+									<small>Минск</small>
+								</span>
+								<small class="date">10 месяцев назад</small>
+								</span>
+								</a>
+							<div class="comment">
+									<p>Динамичненько. Работы капец, видимо, проделал.</p>
+									<div class="info-content">
+										<small class="answer">ответить</small>
+										<span class="likes">134<i class="flaticon-like-1"></i></span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						</ul>
 					</div>
 				</div>
 				<textarea name="" placeholder="Написать комментарий"></textarea>
@@ -607,7 +635,10 @@
 		</figure>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"></script>-->
 <script src="js/slick.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/myjs.js"></script>
 </body>
 </html>
