@@ -65,6 +65,7 @@ button.green:hover { background: linear-gradient(90deg, #219653 0%, #27AE60 100%
 .lovers { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/para.jpg), linear-gradient(180deg, #F0809B 0%, #6D001A 100%) no-repeat center; background-size: cover; width: 100%; height: 100%; }
 
 .invitation { background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/photo.jpg), #D75675; background-size: cover; width: 100%; height: 100%; }
+.invitation button { margin-bottom: 35px; }
 
 .slider { padding: 35px 0 70px; background: linear-gradient(0deg, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url(../img/002.jpg) no-repeat center; background-size: cover; }
 
@@ -135,3 +136,15 @@ textarea { width: 98%; height: 65px; border-radius: 5px; border: 1px solid #E0E0
 .comments ul .comment { display: flex; justify-content: space-between; padding-top: 5px; padding-bottom: 10px; border-bottom: 1px solid #E0E0E0; }
 .comments ul .comment .info-content small { color: #AEAEAE; text-decoration: underline; cursor: pointer; }
 .comments ul .comment .info-content small:hover { text-decoration: none; }
+
+@media (max-width: 1600px) { .slick-next { right: 48%; }
+  .slick-prev { left: 48%; } }
+@media (max-width: 1024px) { .slick-next { right: 47%; }
+  .slick-prev { left: 47%; } }
+@media (max-width: 980px) { .col-head { flex-wrap: wrap; }
+  .col-header { width: 100%; }
+  nav { position: fixed; background: white; left: 0; right: 0; top: 0; z-index: 9999; }
+  header { margin-top: 60px; }
+  nav menu, nav ul { display: none; }
+  .mobile-menu { display: flex; align-items: center; justify-content: space-between; position: fixed; padding: 0 40px; height: 50px; background: white; left: 0; right: 0; bottom: 0; z-index: 9999; } }
+@media (min-width: 980px) { .mobile-menu { display: none; } }

@@ -35,21 +35,33 @@ $(document).ready(function(){
       breakpoint: 820,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '12px',
+        autoplay: true
       }
     },
     {
       breakpoint: 640,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '15px',
+        autoplay: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '30px',
+        autoplay: true
       }
     }
   ]
