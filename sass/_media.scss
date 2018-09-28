@@ -1,11 +1,3 @@
-@media (max-width: 1600px){
-	.slick-next {
-		right: 48%;
-	}
-.slick-prev {
-		left: 48%;
-	}
-}
 @media (max-width: 1024px){
 	.slick-next {
 		right: 47%;
@@ -15,11 +7,24 @@
 	}
 }
 @media (max-width: 980px){
-	.col-head {
+	.col-head, .top-work .container{
 		flex-wrap: wrap;
 	}
-	.col-header {
+	.col-header, .top-work .container .work, .images{
 		width: 100%;
+	}
+	.top-work .container .work {
+ 	padding: 15px 0 15px 0;
+	}
+	.top-work .container .work .images{
+		height: 55vw;
+		max-width: 100%;
+	}
+	.top-work .container .work .footer-work a{
+		width: 50%;
+	}
+	.info .info-head h3{
+		text-align: left;
 	}
 	nav{
 		position: fixed;
@@ -31,6 +36,9 @@
 	}
 	header{
 		margin-top: 60px;
+	}
+	footer{
+		margin-bottom: 50px;
 	}
 	nav menu, nav ul{
 		display: none;

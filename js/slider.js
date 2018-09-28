@@ -21,14 +21,22 @@ $(document).ready(function(){
       breakpoint: 1120,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '12px',
+        autoplay: true
       }
     },
     {
       breakpoint: 970,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '12px',
+        autoplay: true
       }
     },
     {
