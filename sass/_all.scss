@@ -188,6 +188,25 @@ button{
 		margin: 20px 10px 0 0;
 	}
 }
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+.swiper-container-coverflow .swiper-wrapper{
+}
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+					height: 244px !important;
+    width: 173px !important;
+}
+
 .lovers{
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(../img/para.jpg), linear-gradient(180deg, #F0809B 0%, #6D001A 100%) no-repeat center;
 	background-size: cover;
@@ -203,6 +222,7 @@ button{
 		margin-bottom: 35px;
 	}
 }
+
 .slider{
 	padding: 35px 0 70px;
 	background: linear-gradient(0deg, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url(../img/002.jpg) no-repeat center;
